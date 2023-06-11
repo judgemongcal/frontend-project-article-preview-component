@@ -42,6 +42,7 @@ img {
 .content{
     padding: 2rem;
     background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
 }
 
 h1{
@@ -49,6 +50,7 @@ h1{
     font-weight: 700;
     line-height: 1.5rem;
     margin-bottom: 0.75rem;
+    color: #48556A;
 }
 
 p{
@@ -64,28 +66,146 @@ p{
     justify-content: space-around;
     align-items: center;
     background-color: #FFFFFF;
-    padding: 0 1.25rem 1.25rem 1.25rem;
-    border-radius: 0 0 10px 10px;
+    margin: 1rem -1rem auto -1.5rem
 }
 
 .author h3, .author p{
     font-size: 0.75rem;
-    margin-left: -1.5rem;
+    margin-left: -2.5rem;
 }
 
 .author-img{
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 100rem;
-
+    margin-top: -0.25rem;
 }
 
-.share-icon{
+.share-svg{
     background-color: #ECF2F8;
-    height: 2rem;
-    padding: 0.5rem;
+    fill: #6E8098;
     border-color: transparent;
-    border-radius: 2rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
 }
 
+.share-svg:hover{
+    background-color: #6E8098;
+}
+
+.share-svg:hover #share-path{
+    fill: #FFFFFF;
+}
+
+
+
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Media Queries - Desktop */
+
+@media (min-width: 47rem){
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.preview-card{
+    flex-direction: row;
+    width: 45.6rem;
+    height: 17.5rem;
+}
+
+img {
+    border-radius: 10px 0 0 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+}
+
+h1{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+p{
+    font-size: 0.76rem;
+    letter-spacing: 0.12px;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color: #6E8098;
+    margin-right: 0rem;
+}
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin: 1.5rem 1rem auto 0rem;
+}
+
+.author h3, .author p{
+    font-size: 0.75rem;
+    margin-left: -5.75rem;
+}
+
+.share{
+    background-color: #48556A;
+    display: flex;;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 15rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 43%;
+    left: 64%;
+}
+
+.share p{
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    margin: auto 1rem auto 1rem;
+}
+
+.socials{
+    display: flex;
+    padding-right: 1rem;
+}
+
+.socials img{
+    border-radius: 0;
+ 
+}
+
+.socials img:nth-of-type(2){
+    margin: auto 1rem auto 1rem;
+}
+
+.pointer{
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #48556A;
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    transform: rotate(45deg);
+}
+
+}
 
