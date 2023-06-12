@@ -66,7 +66,7 @@ p{
     justify-content: space-around;
     align-items: center;
     background-color: #FFFFFF;
-    margin: 1rem -1rem auto -1.5rem
+    margin: 1rem -1rem -0.85rem -1.5rem
 }
 
 .author h3, .author p{
@@ -90,24 +90,74 @@ p{
     width: 2rem;
     height: 2rem;
     border-radius: 100%;
+    z-index: 1;
+    transition: all 0.3s ease;
 }
 
-.share-svg:hover{
+.share-svg:hover, .share-svg:active{
     background-color: #6E8098;
 }
 
-.share-svg:hover #share-path{
+.share-svg:hover #share-path, .share-svg:active #share-path{
     fill: #FFFFFF;
 }
-
-
 
 
 button{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    z-index: 1;
 }
+
+
+.share{
+    background-color: #48556A;
+    display: flex;;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.375rem 10.25rem 1.75rem 10.25rem;
+    width: 15rem;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    display: none;
+}
+
+.share p{
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    margin: auto 1rem auto 1rem;
+}
+
+.socials{
+    display: flex;
+    padding-right: 6.5rem;
+
+}
+
+.socials img{
+    border-radius: 0;
+ 
+}
+
+.socials img:nth-of-type(2){
+    margin: auto 1rem auto 1rem;
+}
+
+.pointer{
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #48556A;
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    transform: rotate(45deg);
+    display: none;
+}
+
+
 
 
 
@@ -165,46 +215,19 @@ p{
 }
 
 .share{
-    background-color: #48556A;
-    display: flex;;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 1rem 1rem;
     width: 15rem;
     border-radius: 10px;
-    position: absolute;
-    top: 43%;
-    left: 64%;
-}
-
-.share p{
-    font-size: 0.8rem;
-    letter-spacing: 5px;
-    margin: auto 1rem auto 1rem;
+    top: 43.5%;
+    left: 62.1%;
 }
 
 .socials{
-    display: flex;
     padding-right: 1rem;
 }
 
-.socials img{
-    border-radius: 0;
- 
-}
-
-.socials img:nth-of-type(2){
-    margin: auto 1rem auto 1rem;
-}
-
 .pointer{
-    width: 1.25rem;
-    height: 1.25rem;
-    background-color: #48556A;
-    position: absolute;
-    top: 80%;
-    left: 46%;
-    transform: rotate(45deg);
+    display: block;
 }
 
 }
